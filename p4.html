@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Program 4</title>
+        <script>
+            function vowel() {
+                var str = document.getElementById("s").value.toUpperCase();
+                for(var i=0; i<str.length; i++) {
+                    c = str.charAt(i);
+                    if(['A', 'E', 'I', 'O', 'U'].includes(c)) {
+                        document.getElementById("resultvowel").innerHTML="The left most vowel is at pos "+(i+1);
+                        break;
+                    }
+                }
+            }
+
+            function reverse() {
+                var num = document.getElementById("no").value;
+
+                if(isNaN(num)) {
+                    alert("Enter a valid number");
+                    return;
+                }
+
+                var r = "";
+                for(var i=num.length; i>=0; i--) {
+                    r += num.charAt(i);
+                }
+
+                document.getElementById("resultreverse").innerHTML="The reverse is: "+r;
+            }
+        </script>
+    </head>
+    <body>
+        <section>
+            <article>
+                <h2>Find the left most vowel</h2>
+                <p>Enter a string: 
+                    <input type="text" id="s" size="10" />
+                    <br>
+                    <button onClick="vowel()">Search</button>
+                </p>
+                <span id="resultvowel"></span>
+            </article>
+            <article>
+                <h2>Find the reverse of a number</h2>
+                <p>Enter a number: 
+                    <input type="text" id="no" size="10" />
+                    <br>
+                    <button onClick="reverse()">Reverse</button>
+                </p>
+                <span id="resultreverse"></span>
+            </article>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="p5.css"?>
+
+<VTU>
+    <STUDENT>
+        <USN>1MJ17CS170</USN>
+        <NAME>VANDANA</NAME>
+        <COLLEGE>MVJCE</COLLEGE>
+        <BRANCH>CSE</BRANCH>
+        <YEAR>2017</YEAR>
+        <EMAIL>ABC</EMAIL>
+    </STUDENT>
+    <STUDENT>
+        <USN>1MJ17CS171</USN>
+        <NAME>VARNITHA</NAME>
+        <COLLEGE>MVJCE</COLLEGE>
+        <BRANCH>CSE</BRANCH>
+        <YEAR>2017</YEAR>
+        <EMAIL>DEF</EMAIL>
+    </STUDENT>
+    <STUDENT>
+        <USN>1MJ17CS172</USN>
+        <NAME>VARUN</NAME>
+        <COLLEGE>MVJCE</COLLEGE>
+        <BRANCH>CSE</BRANCH>
+        <YEAR>2017</YEAR>
+        <EMAIL>GHI</EMAIL>
+    </STUDENT>
+</VTU>

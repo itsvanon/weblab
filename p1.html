@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Program 1</title>
+        <script type="text/javascript">
+            var num1, num2, result;
+
+            function getNum() {
+                num1 = document.getElementById("first").value;
+                num2 = document.getElementById("second").value;
+                console.log(num1);
+                console.log(num2);
+                                if(isNaN(num1) || isNaN(num2)) {
+                                    alert("Enter a valid number");
+                                    return;
+                                }
+            }
+
+            function add() {
+                getNum();
+                result = num1 + num2;
+                console.log(result);
+                document.getElementById("result").innerHTML = result;
+            }
+
+            function subtract() {
+                getNum();
+                result = num2 - num1;
+                console.log(result);
+                document.getElementById("result").innerHTML = result;
+            }
+
+            function multiply() {
+                getNum();
+                result = num1*num2;
+                console.log(result);
+                document.getElementById("result").innerHTML = result;
+            }
+
+            function quotient() {
+                getNum();
+                result = Math.trunc(num1/num2);
+                console.log(result);
+                document.getElementById("result").innerHTML = result;
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+        <p>1st: <input type="text" id="first" /></p>
+        <p>2nd: <input type="text" id="second" /></p>
+        <input type="button" value="Add" onClick="add()" />
+        <input type="button" value="Subtract" onClick="subtract()" />
+        <input type="button" value="Quotient" onClick="quotient()" />
+        <input type="button" value="Multiply" onClick="multiply()" />
+        <br>
+        <p>The result is: </p>
+        <span id="result"></span>
+        </form>
+    </body>
+</html>

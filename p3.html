@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Program 3</title>
+        <script type="text/javascript">
+            var a = setInterval(grow, 10); // grow is the function we call and also the number next to it is the time in ms same applies to all setInterval functions
+            var i = 5;
+
+            function grow() {
+                i+=5;
+                document.getElementById("textanimation").innerHTML="Text Grow";
+                document.getElementById("textanimation").style.color="red";
+                document.getElementById("textanimation").style.fontSize=i+"pt";
+
+                if(i>50) {
+                    clearInterval(a);
+                    a = setInterval(shrink, 10);
+                }
+            }
+
+            function shrink() {
+                i-=5;
+                document.getElementById("textanimation").innerHTML="Text Shrink";
+                document.getElementById("textanimation").style.color="blue";
+                document.getElementById("textanimation").style.fontSize=i+"pt";
+
+                if(i<5) {
+                    clearInterval(a);
+                    a = setInterval(grow, 10);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <p><span id="textanimation"></span></p>
+    </body>
+</html>
