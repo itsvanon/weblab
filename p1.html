@@ -7,8 +7,6 @@
             function getNum() {
                 num1 = document.getElementById("first").value;
                 num2 = document.getElementById("second").value;
-                console.log(num1);
-                console.log(num2);
                                 if(isNaN(num1) || isNaN(num2)) {
                                     alert("Enter a valid number");
                                     return;
@@ -18,28 +16,24 @@
             function add() {
                 getNum();
                 result = num1 + num2;
-                console.log(result);
                 document.getElementById("result").innerHTML = result;
             }
 
             function subtract() {
                 getNum();
                 result = num2 - num1;
-                console.log(result);
                 document.getElementById("result").innerHTML = result;
             }
 
             function multiply() {
                 getNum();
                 result = num1*num2;
-                console.log(result);
                 document.getElementById("result").innerHTML = result;
             }
 
             function quotient() {
                 getNum();
                 result = Math.trunc(num1/num2);
-                console.log(result);
                 document.getElementById("result").innerHTML = result;
             }
         </script>
