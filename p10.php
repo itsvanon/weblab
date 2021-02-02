@@ -57,12 +57,10 @@
             $min_rec = mysqli_fetch_array($result_min);
 
             $query_swap = "UPDATE student_tbl SET USN='$row[1]', Name='$row[2]' WHERE ID=$minID";
-            "</br>";
 
             $result_swap = mysqli_query($connect, $query_swap);
             
             $query_swap2 = "UPDATE student_tbl SET USN='$min_rec[1]', Name='$row[2]' WHERE ID=$row[0]";
-            "<br /><br />";
 
             $result_swap = mysqli_query($connect, $query_swap2);
 
