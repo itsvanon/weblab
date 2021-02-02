@@ -4,9 +4,9 @@
     </head>
     <body>
         <h1>State search</h1>
+        <hr />
         <?php 
             include("states.php");
-            echo "<hr />";
 
             preg_match('/\b(\w*xas)\b/', $states, $match);
             $statesList[0] = $match[0];
